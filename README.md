@@ -1,2 +1,2 @@
 # amazing-web-portfolio
-David's homepage
+David's homepage: abashidze.com
