@@ -93,6 +93,10 @@ section h2 {
   gap: 1rem;
 }
 
+.about-contents p {
+  font-size: 1.1rem;
+}
+
 /* style links */
 .anchor-text {
   color: var(--color-highlight);
@@ -114,4 +118,60 @@ h5::selection,
 h6::selection {
   background-color: var(--color-accent);
   color: #0f172a;
+}
+
+/* EXPERIENCE section */
+.experience-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: repeat(0, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.experience-card h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tenure {
+  text-transform: uppercase;
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+
+.experience-card p {
+  font-size: 0.9rem;
+}
+
+.card-header {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--color-accent);
+}
+
+.tag {
+  background-color: #122d42;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.tag p {
+  font-size: 0.8rem;
 }
