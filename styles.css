@@ -16,11 +16,27 @@ body {
   padding: 1rem; /* 1rem = 16px*/
 }
 
+/* change background color */
+.underlay {
+  position: fixed;
+  background-color: #172554;
+  inset: 0; /*element will be stretched to all ages of the page*/
+  opacity: 0.35;
+}
+
+header,
+main,
+footer {
+  position: relative;
+  z-index: 10;
+}
+
 /* HEADER */
 header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  max-width: 300px;
 }
 
 header h1,
