@@ -19,12 +19,16 @@ body {
   gap: 6rem;
 }
 
+p {
+  font-size: 0.9rem;
+}
+
 /* change background color */
 .underlay {
   position: fixed;
   background-color: #172554;
   inset: 0; /*element will be stretched to all ages of the page*/
-  opacity: 0.35;
+  opacity: 0.15;
 }
 
 header,
@@ -60,5 +64,24 @@ header h1 {
 }
 
 header h4 {
+  font-weight: 400;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
   font-weight: 400;
 }
