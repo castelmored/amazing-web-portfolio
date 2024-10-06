@@ -1,6 +1,11 @@
 :root {
   --color-accent: #5eead4;
   --color-highlight: #e2e8f0;
+  --background-accent: #122d42;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -95,6 +100,26 @@ section h2 {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 500;
+}
+
+/* sticky header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  padding: 1rem 0rem;
+}
+
+.sticky-header h2 {
+  position: relative;
+  z-index: 2;
+}
+
+.sticky-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #101a31;
+  opacity: 0.8;
 }
 
 /* ABOUT section */
@@ -245,4 +270,34 @@ h6::selection {
 
 .project-archive-link:hover::after {
   background: var(--color-accent);
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: start;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.scroll-to-top {
+  text-decoration: none;
+  color: var(--color-highlight);
+  background: var(--background-accent);
+  padding: 0 0.75rem;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  overflow: hidden;
+  transition-duration: 200ms;
+}
+
+.scroll-to-top:hover {
+  opacity: 0.6;
 }
